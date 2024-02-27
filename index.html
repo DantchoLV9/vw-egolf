@@ -10,94 +10,105 @@
 			content="The new Premium Volkswagen e-Golf, available later this year."
 		/>
 	</head>
-	<body class="font-inter flex flex-col h-screen">
-		<!-- Header -->
-		<header
-			class="flex flex-row py-5 px-8 gap-10 text-foreground bg-white relative shadow"
-		>
-			<!-- Logo -->
-			<span class="font-bold text-xl hover:text-accent">
-				<a href="#">Premium Volkswagen</a>
-			</span>
-			<!-- Navigation -->
-			<nav class="flex justify-between flex-1">
-				<ul
-					id="navigation_elements"
-					class="hidden flex-col justify-center items-center absolute h-fit w-full bg-white top-full py-3 sm:py-0 shadow sm:shadow-none left-0 sm:top-0 sm:w-auto sm:h-auto sm:flex sm:flex-row sm:relative text-lg gap-2 sm:gap-5"
-				>
-					<li
-						class="hover:text-accent w-full py-2 sm:w-auto sm:py-0 text-center"
+	<body class="font-inter flex flex-col">
+		<!-- Wrapper around Header and Hero section used to make them 100% height -->
+		<div class="h-screen flex flex-col">
+			<!-- Header -->
+			<header
+				class="flex flex-row py-5 px-8 gap-10 text-foreground bg-white relative shadow"
+			>
+				<!-- Logo -->
+				<span class="font-bold text-xl hover:text-accent">
+					<a href="#">Premium Volkswagen</a>
+				</span>
+				<!-- Navigation -->
+				<nav class="flex justify-between flex-1">
+					<ul
+						id="navigation_elements"
+						class="hidden flex-col justify-center items-center absolute h-fit w-full bg-white top-full py-3 sm:py-0 shadow sm:shadow-none left-0 sm:top-0 sm:w-auto sm:h-auto sm:flex sm:flex-row sm:relative text-lg gap-2 sm:gap-5"
 					>
-						<a href="#">Models</a>
-					</li>
-					<li
-						class="hover:text-accent w-full py-2 sm:w-auto sm:py-0 text-center"
+						<li
+							class="hover:text-accent w-full py-2 sm:w-auto sm:py-0 text-center"
+						>
+							<a href="#">Models</a>
+						</li>
+						<li
+							class="hover:text-accent w-full py-2 sm:w-auto sm:py-0 text-center"
+						>
+							<a href="#">Used Cars</a>
+						</li>
+						<li
+							class="hover:text-accent w-full py-2 sm:w-auto sm:py-0 text-center"
+						>
+							<a href="#">Finance</a>
+						</li>
+					</ul>
+					<!-- Mobile navigation toggle -->
+					<button
+						id="nav_toggle_button"
+						onclick="toggleNavigation()"
+						class="ml-auto flex justify-center items-center sm:hidden"
+						aria-label="toggle navigation menu"
 					>
-						<a href="#">Used Cars</a>
-					</li>
-					<li
-						class="hover:text-accent w-full py-2 sm:w-auto sm:py-0 text-center"
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+							/>
+						</svg>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 hidden"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M6 18 18 6M6 6l12 12"
+							/>
+						</svg>
+					</button>
+				</nav>
+			</header>
+			<!-- Hero Section -->
+			<section class="bg-heroBg bg-bottom bg-cover h-full">
+				<!-- This div provides the darken overlay over the background image-->
+				<div class="bg-black/30 h-full flex flex-col gap-10">
+					<!-- Hero section content -->
+					<div
+						class="w-full sm:w-11/12 lg:w-2/3 2xl:w-1/2 my-auto flex flex-col items-center"
 					>
-						<a href="#">Finance</a>
-					</li>
-				</ul>
-				<!-- Mobile navigation toggle -->
-				<button
-					id="nav_toggle_button"
-					onclick="toggleNavigation()"
-					class="ml-auto flex justify-center items-center sm:hidden"
-					aria-label="toggle navigation menu"
-				>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-						class="w-6 h-6"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-						/>
-					</svg>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-						class="w-6 h-6 hidden"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M6 18 18 6M6 6l12 12"
-						/>
-					</svg>
-				</button>
-			</nav>
-		</header>
-		<!-- Hero Section -->
-		<section class="bg-heroBg bg-bottom bg-cover h-full">
-			<!-- This div provides the darken overlay over the background image-->
-			<div class="bg-black/30 h-full flex flex-col gap-10">
-				<!-- Hero section content -->
-				<div class="w-1/3 my-auto flex flex-col gap-16 mx-32">
-					<h1 class="flex flex-col gap-3 font-goldman text-8xl text-white">
-						<span>The new</span>
-						<span>Volkswagen</span>
-						<span>e-Golf</span>
-					</h1>
-					<span>
-						<a href="#" class="bg-accent px-5 py-3 text-white text-lg font-bold"
-							>Keep me informed
-						</a>
-					</span>
+						<div class="flex flex-col gap-16">
+							<h1
+								class="flex flex-col gap-3 font-goldman text-5xl sm:text-7xl xl:text-8xl text-white"
+							>
+								<span>The new</span>
+								<span>Volkswagen</span>
+								<span>e-Golf</span>
+							</h1>
+							<span class="float-left">
+								<a
+									href="#"
+									class="bg-accent px-5 py-3 text-white text-lg font-bold"
+									>Keep me informed
+								</a>
+							</span>
+						</div>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</div>
 		<!-- Scripts -->
 		<script src="js/navigation.js"></script>
 	</body>
