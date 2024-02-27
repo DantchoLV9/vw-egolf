@@ -5,9 +5,11 @@
 @font-face {
     font-family: Inter;
     src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Goldman;
     src: url(../fonts/Goldman-Bold.ttf);
+    font-display: swap;
 }
