@@ -18,7 +18,9 @@
 				class="flex flex-row py-5 px-8 gap-10 text-foreground relative shadow"
 			>
 				<!-- Logo -->
-				<span class="font-bold text-xl hover:text-accent">
+				<span
+					class="font-bold text-xl hover:text-lighterAccent transition-colors"
+				>
 					<a href="#">Premium Volkswagen</a>
 				</span>
 				<!-- Navigation -->
@@ -28,17 +30,17 @@
 						class="hidden flex-col justify-center items-center absolute h-fit w-full bg-white top-full py-3 sm:py-0 shadow sm:shadow-none left-0 sm:top-0 sm:w-auto sm:h-auto sm:flex sm:flex-row sm:relative text-lg gap-2 sm:gap-5"
 					>
 						<li
-							class="hover:text-accent w-full py-2 sm:w-auto sm:py-0 text-center"
+							class="hover:text-lighterAccent transition-colors w-full py-2 sm:w-auto sm:py-0 text-center"
 						>
 							<a href="#">Models</a>
 						</li>
 						<li
-							class="hover:text-accent w-full py-2 sm:w-auto sm:py-0 text-center"
+							class="hover:text-lighterAccent transition-colors w-full py-2 sm:w-auto sm:py-0 text-center"
 						>
 							<a href="#">Used Cars</a>
 						</li>
 						<li
-							class="hover:text-accent w-full py-2 sm:w-auto sm:py-0 text-center"
+							class="hover:text-lighterAccent transition-colors w-full py-2 sm:w-auto sm:py-0 text-center"
 						>
 							<a href="#">Finance</a>
 						</li>
@@ -47,7 +49,7 @@
 					<button
 						id="nav_toggle_button"
 						onclick="toggleNavigation()"
-						class="ml-auto flex justify-center items-center sm:hidden"
+						class="ml-auto flex justify-center items-center sm:hidden text-foreground"
 						aria-label="toggle navigation menu"
 					>
 						<svg
@@ -100,7 +102,7 @@
 							<span class="float-left">
 								<a
 									href="#sigup_form"
-									class="bg-accent px-5 py-3 text-white text-lg font-bold transition-colors hover:bg-darkerAccent"
+									class="bg-accent px-5 py-3 text-white text-lg font-bold transition-colors hover:bg-lighterAccent"
 									>Keep me informed
 								</a>
 							</span>
@@ -111,15 +113,17 @@
 		</div>
 		<!-- Design Section -->
 		<section class="flex flex-col py-14 justify-center items-center">
-			<h2 class="text-5xl font-bold text-center">Design</h2>
-			<p class="text-center pt-3 px-5 text-xl">
+			<h2 class="text-5xl font-bold text-center text-foreground">Design</h2>
+			<p class="text-center pt-3 px-5 text-xl text-foreground">
 				Everything you love about the Golf on the outside. Everything you'll
 				love about the e-Golf on the inside
 			</p>
 			<div
 				class="grid grid-cols-1 grid-rows-4 lg:grid-cols-2 lg:grid-rows-2 pt-14 w-10/12 gap-10"
 			>
-				<div class="bg-accent p-5 flex flex-col gap-5">
+				<div
+					class="bg-accent hover:bg-lighterAccent transition-colors p-5 flex flex-col gap-5"
+				>
 					<img
 						width="1920"
 						height="1440"
@@ -134,9 +138,26 @@
 							electric twist. LED headlights, C-shaped running lights and
 							signature blue flash across the front grille.
 						</p>
+						<a href="#" class="text-white font-bold flex gap-2"
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								class="w-6 h-6"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 0 1 .67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 1 1-.671-1.34l.041-.022ZM12 9a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+									clip-rule="evenodd"
+								/>
+							</svg>
+							Read more</a
+						>
 					</div>
 				</div>
-				<div class="bg-accent p-5 flex flex-col gap-5">
+				<div
+					class="bg-accent hover:bg-lighterAccent transition-colors p-5 flex flex-col gap-5"
+				>
 					<img
 						width="1920"
 						height="1440"
@@ -151,9 +172,26 @@
 							practicality and comfort with unique touches like the electric
 							blue stitching on the leather-wrapped steering wheel.
 						</p>
+						<a href="#" class="text-white font-bold flex gap-2"
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								class="w-6 h-6"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 0 1 .67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 1 1-.671-1.34l.041-.022ZM12 9a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+									clip-rule="evenodd"
+								/>
+							</svg>
+							Read more</a
+						>
 					</div>
 				</div>
-				<div class="bg-accent p-5 flex flex-col gap-5">
+				<div
+					class="bg-accent hover:bg-lighterAccent transition-colors p-5 flex flex-col gap-5"
+				>
 					<img
 						width="1920"
 						height="1440"
@@ -167,9 +205,26 @@
 							The e-Golf's highly efficient LED headlights use far less energy
 							than conventional headlights, with no compromise on brightness.
 						</p>
+						<a href="#" class="text-white font-bold flex gap-2"
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								class="w-6 h-6"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 0 1 .67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 1 1-.671-1.34l.041-.022ZM12 9a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+									clip-rule="evenodd"
+								/>
+							</svg>
+							Read more</a
+						>
 					</div>
 				</div>
-				<div class="bg-accent p-5 flex flex-col gap-5">
+				<div
+					class="bg-accent hover:bg-lighterAccent transition-colors p-5 flex flex-col gap-5"
+				>
 					<img
 						width="1920"
 						height="1440"
@@ -184,6 +239,21 @@
 							extra-aerodynamic. The reduced drag means they actually help the
 							car save energy.
 						</p>
+						<a href="#" class="text-white font-bold flex gap-2"
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								class="w-6 h-6"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 0 1 .67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 1 1-.671-1.34l.041-.022ZM12 9a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+									clip-rule="evenodd"
+								/>
+							</svg>
+							Read more</a
+						>
 					</div>
 				</div>
 			</div>
@@ -206,10 +276,10 @@
 					aria-label="email newsletter input field"
 					type="email"
 					placeholder="Email"
-					class="px-4 py-3 text-xl font-inter bg-darkerAccent text-white border-b placeholder:text-white/80 w-full sm:w-auto"
+					class="px-4 py-3 text-xl font-inter bg-darkerAccent focus:bg-lighterAccent transition-colors text-white border-b placeholder:text-white/80 w-full sm:w-auto"
 				/>
 				<button
-					class="px-6 py-3 text-xl bg-darkerAccent text-white w-full sm:w-auto border-b"
+					class="px-6 py-3 text-xl bg-darkerAccent hover:bg-lighterAccent transition-colors text-white w-full sm:w-auto border-b"
 				>
 					Sign up
 				</button>
@@ -221,33 +291,123 @@
 				class="flex flex-col gap-5 md:flex-row justify-center items-center md:justify-between md:items-start w-10/12 lg:w-8/12"
 			>
 				<div class="flex flex-col gap-3 w-full md:w-auto">
-					<h3 class="text-3xl font-bold">Explore</h3>
+					<h3 class="text-3xl font-bold text-foreground">Explore</h3>
 					<ul class="flex flex-col gap-0.5 text-lg">
-						<li><a href="#">Browse the range</a></li>
-						<li><a href="#">Fleet</a></li>
-						<li><a href="#">Technology</a></li>
-						<li><a href="#">Environment</a></li>
-						<li><a href="#">Careers</a></li>
-						<li><a href="#">Service & parts</a></li>
+						<li>
+							<a
+								class="hover:text-lighterAccent text-foreground transition-colors"
+								href="#"
+								>Browse the range</a
+							>
+						</li>
+						<li>
+							<a
+								class="hover:text-lighterAccent text-foreground transition-colors"
+								href="#"
+								>Fleet</a
+							>
+						</li>
+						<li>
+							<a
+								class="hover:text-lighterAccent text-foreground transition-colors"
+								href="#"
+								>Technology</a
+							>
+						</li>
+						<li>
+							<a
+								class="hover:text-lighterAccent text-foreground transition-colors"
+								href="#"
+								>Environment</a
+							>
+						</li>
+						<li>
+							<a
+								class="hover:text-lighterAccent text-foreground transition-colors"
+								href="#"
+								>Careers</a
+							>
+						</li>
+						<li>
+							<a
+								class="hover:text-lighterAccent text-foreground transition-colors"
+								href="#"
+								>Service & parts</a
+							>
+						</li>
 					</ul>
 				</div>
 				<div class="flex flex-col gap-3 w-full md:w-auto">
-					<h3 class="text-3xl font-bold">Tools</h3>
+					<h3 class="text-3xl font-bold text-foreground">Tools</h3>
 					<ul class="flex flex-col gap-0.5 text-lg">
-						<li><a href="#">Book a test drive</a></li>
-						<li><a href="#">Finance calculator</a></li>
-						<li><a href="#">Find a retailer</a></li>
-						<li><a href="#">Request a quote</a></li>
+						<li>
+							<a
+								class="hover:text-lighterAccent text-foreground transition-colors"
+								href="#"
+								>Book a test drive</a
+							>
+						</li>
+						<li>
+							<a
+								class="hover:text-lighterAccent text-foreground transition-colors"
+								href="#"
+								>Finance calculator</a
+							>
+						</li>
+						<li>
+							<a
+								class="hover:text-lighterAccent text-foreground transition-colors"
+								href="#"
+								>Find a retailer</a
+							>
+						</li>
+						<li>
+							<a
+								class="hover:text-lighterAccent text-foreground transition-colors"
+								href="#"
+								>Request a quote</a
+							>
+						</li>
 					</ul>
 				</div>
 				<div class="flex flex-col gap-3 w-full md:w-auto">
-					<h3 class="text-3xl font-bold">Social</h3>
+					<h3 class="text-3xl font-bold text-foreground">Social</h3>
 					<ul class="flex flex-col gap-0.5 text-lg">
-						<li><a href="#">TikTok</a></li>
-						<li><a href="#">Facebook</a></li>
-						<li><a href="#">Twitter</a></li>
-						<li><a href="#">Instagram</a></li>
-						<li><a href="#">YouTube</a></li>
+						<li>
+							<a
+								class="hover:text-lighterAccent text-foreground transition-colors"
+								href="#"
+								>TikTok</a
+							>
+						</li>
+						<li>
+							<a
+								class="hover:text-lighterAccent text-foreground transition-colors"
+								href="#"
+								>Facebook</a
+							>
+						</li>
+						<li>
+							<a
+								class="hover:text-lighterAccent text-foreground transition-colors"
+								href="#"
+								>Twitter</a
+							>
+						</li>
+						<li>
+							<a
+								class="hover:text-lighterAccent text-foreground transition-colors"
+								href="#"
+								>Instagram</a
+							>
+						</li>
+						<li>
+							<a
+								class="hover:text-lighterAccent text-foreground transition-colors"
+								href="#"
+								>YouTube</a
+							>
+						</li>
 					</ul>
 				</div>
 			</div>
