@@ -12,7 +12,7 @@ module.exports = {
 				foreground: "#1A1A1A",
 			},
 			backgroundImage: {
-				heroBg: "url('../images/hero_image.png')",
+				heroBg: "url('../images/hero_image.webp')",
 			},
 		},
 	},
