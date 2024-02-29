@@ -24,8 +24,13 @@ handleOnMove = (e) => {
 	// Clamp image number between 1 and 36 (a number for each 10 degree image)
 	const imageNumber = (((imageNumberUnconstrained % 36) + 36) % 36) + 1;
 
-    // Update image source
-	previewImg.src = `/images/360_assets/white${imageNumber}.webp`;
+	// Only update the image source if the image number has changed
+	if (parseInt(preview.dataset.imageNumber) !== imageNumber) {
+		// Update image source
+		previewImg.src = `/images/360_assets/white${imageNumber}.webp`;
+
+		preview.dataset.imageNumber = imageNumber;
+	}
 
 	preview.dataset.percentage = nextPercentage;
 };
