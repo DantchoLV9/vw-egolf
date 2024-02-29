@@ -17,6 +17,9 @@ module.exports = {
 			backgroundImage: {
 				heroBg: "url('../images/hero_image.webp')",
 			},
+			backgroundPosition: {
+				heroBgMobilePosition: "70% bottom",
+			},
 		},
 	},
 	plugins: [],
