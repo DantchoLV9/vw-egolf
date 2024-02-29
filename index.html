@@ -258,10 +258,34 @@
 				</div>
 			</div>
 		</section>
+		<!-- 360 Preview -->
+		<section class="flex flex-col justify-center items-center w-full relative">
+			<h2 class="text-5xl font-bold text-center text-foreground">
+				360&deg; Preview
+			</h2>
+			<div
+				id="car_preview"
+				class="w-full mt-14 bg-gradient-to-t from-lighterAccent cursor-e-resize"
+				data-mouse-down-at="0"
+				data-prev-percentage="0"
+			>
+				<div class="flex relative">
+					<div class="absolute w-full h-full z-10"></div>
+					<img
+						id="preview_img"
+						class="pointer-events-none"
+						width="1920"
+						height="1080"
+						src="/images/360_assets/white1.webp"
+						draggable="false"
+					/>
+				</div>
+			</div>
+		</section>
 		<!-- Signup for newsletter Section -->
 		<section
 			id="sigup_form"
-			class="bg-gradient-to-br from-lighterAccent to-darkerAccent flex flex-col justify-center items-center py-12 sm:py-16 gap-10"
+			class="bg-gradient-to-b from-lighterAccent to-darkerAccent flex flex-col justify-center items-center py-12 sm:py-16 gap-10"
 		>
 			<h2
 				class="text-2xl sm:text-4xl font-bold text-center text-white w-5/6 sm:w-2/3"
@@ -415,5 +439,6 @@
 		</footer>
 		<!-- Scripts -->
 		<script src="js/navigation.js"></script>
+		<script src="js/360.js"></script>
 	</body>
 </html>
